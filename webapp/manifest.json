@@ -120,6 +120,31 @@
             "settings": {
               "contextPath": "/Orders",
               "variantManagement": "Page",
+              "controlConfiguration": {
+                "@com.sap.vocabularies.UI.v1.LineItem": {
+                  "tableSettings": {
+                    "type": "GridTable",
+                    "quickVariantSelection": {
+                      "paths": [
+                        {
+                          "annotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#qfLifecycleStatusN"
+                        },
+                        {
+                          "annotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#qfLifecycleStatusP"
+                        },
+                        {
+                          "annotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#qfLifecycleStatusC"
+                        },
+                        {
+                          "annotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#qfLifecycleStatusX"
+                        }
+                      ],
+                      "hideTableTitle": true,
+                      "showCounts": true
+                    }
+                  }
+                }
+              },
               "navigation": {
                 "Orders": {
                   "detail": {
